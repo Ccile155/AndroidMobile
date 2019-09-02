@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="accueil">Bienvenida, como esta ?</string>
+    <string name="start">Get Started</string>
+    <string name="prev">Previous</string>
+    <string name="legoboard">Ceci est une app vide qui ne propose rien d\'autre que de contempler des images hautes en couleurs et de cliquer sur 2 boutons.\n Enjoy !</string>
+    <string name="count"></string>
+    <string name="channel_name">Notif compteur</string>
+    <string name="channel_description">Nbr de cliques sur l\'image</string>
+
+</resources>
