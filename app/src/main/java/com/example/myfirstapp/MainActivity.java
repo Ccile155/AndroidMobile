@@ -1,23 +1,18 @@
 package com.example.myfirstapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-import androidx.core.content.ContextCompat;
-
-import android.app.Notification;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Matrix;
-import android.os.Build;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RemoteViews;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,14 +29,15 @@ public class MainActivity extends AppCompatActivity {
         this.dandelion = findViewById(R.id.dandelion);
         this.count = (TextView) findViewById(R.id.count);
 
+
         dandelion.setOnClickListener(new View.OnClickListener(){
             @Override
            public void onClick(View view){
                 ++ cpt;
-                count.setText(cpt);
+                count.setText("Vous avez cliqué "+cpt+" fois!");
                 Matrix matrix = new Matrix();
                 dandelion.setScaleType(ImageView.ScaleType.MATRIX);   //required
-                matrix.postRotate( 180f, dandelion.getDrawable().getBounds().width()/2, dandelion.getDrawable().getBounds().height()/2);
+                matrix.postRotate( 45, dandelion.getDrawable().getBounds().width()/2, dandelion.getDrawable().getBounds().height()/2);
                 dandelion.setImageMatrix(matrix);
             }
        });
