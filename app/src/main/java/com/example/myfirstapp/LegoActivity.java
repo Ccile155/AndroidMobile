@@ -14,7 +14,7 @@ public class LegoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lego);
+        setContentView(R.layout.custom_layout);
 
         this.previous = findViewById(R.id.previous);
         previous.setOnClickListener(new View.OnClickListener(){

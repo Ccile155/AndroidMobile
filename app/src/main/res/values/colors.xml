@@ -3,7 +3,8 @@
     <color name="colorPrimary">#BCCF97</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#FF5722</color>
-    <color name="accueil" >#3F51B5</color>
-    <color name="transparent" >#25FAFAFA</color>
+    <color name="accueil" >#00BCD4</color>
+    <color name="transparent" >#00FAFAFA</color>
     <color name="white">#FFFFFF</color>
+    <color name="dark">#2C2C2C</color>
 </resources>

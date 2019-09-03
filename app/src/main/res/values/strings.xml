@@ -3,7 +3,7 @@
     <string name="accueil">Bienvenida, como esta ?</string>
     <string name="start">Get Started</string>
     <string name="prev">Previous</string>
-    <string name="legoboard">Ceci est une app vide qui ne propose rien d\'autre que de contempler des images hautes en couleurs et de cliquer sur 2 boutons.\n Enjoy !</string>
+    <string name="legoboard">Ceci est une app qui ne propose rien d\'autre que de contempler des images hautes en couleurs et de cliquer sur 2 boutons.\n Enjoy !</string>
     <string name="count"></string>
     <string name="channel_name">Notif compteur</string>
     <string name="channel_description">Nbr de cliques sur l\'image</string>
@@ -11,5 +11,16 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 </resources>

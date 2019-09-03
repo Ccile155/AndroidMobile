@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/dark">
+
+    <ImageView
+        android:id="@+id/dandelion"
+        android:layout_width="409dp"
+        android:layout_height="278dp"
+        android:src="@drawable/dandelion_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/count"
@@ -19,51 +31,61 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/dandelion"
-        android:layout_width="409dp"
-        android:layout_height="278dp"
-        android:src="@drawable/dandelion_blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="427dp" />
 
     <TextView
+        android:id="@+id/welcome"
         android:layout_width="303dp"
         android:layout_height="36dp"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/quicksand_italic"
         android:text="@string/accueil"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textColor="@color/accueil"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.591" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dandelion"
+        app:layout_constraintVertical_bias="0.117" />
 
     <Button
         android:id="@+id/getstart"
-        android:layout_width="121dp"
-        android:layout_height="40dp"
+        android:layout_width="138dp"
+        android:layout_height="39dp"
         android:background="@drawable/my_button"
         android:clickable="true"
         android:focusable="true"
+        android:fontFamily="@font/quicksand_regular"
         android:text="@string/start"
         android:textAllCaps="false"
-        android:textColor="@color/accueil"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:theme="@style/Theme.AppCompat"
+        android:layout_width="359dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="497dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getstart"
+        app:layout_constraintVertical_bias="0.947" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
