@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity{
 
     private MediaPlayer mp;
     private ImageView dandelion;
-    private Button getstart;
+    private ImageButton getstart;
     private TextView count;
     static Integer cpt = 0;
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity{
 
     public void gray(int i){
         ColorMatrix matrix = new ColorMatrix();
-        if(i % 2 != 0) {
+        if(i % 2 == 0) {
             matrix.setSaturation(0);
             dandelion.setColorFilter(new ColorMatrixColorFilter(matrix));
         } else {

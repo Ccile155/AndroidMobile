@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 public class LegoActivity extends AppCompatActivity {
 
     private ImageButton previous;
+    private ImageButton next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,16 @@ public class LegoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent otherActivity = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(otherActivity);
+                finish();
+            }
+        });
+
+        this.next = findViewById(R.id.next);
+        next.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent otherActivity = new Intent(getApplicationContext(), Act3.class);
                 startActivity(otherActivity);
                 finish();
             }

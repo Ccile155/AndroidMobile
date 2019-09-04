@@ -2,17 +2,20 @@
     <string name="app_name">MyFirstApp</string>
     <string name="accueil">Bienvenida, como esta ?</string>
     <string name="start">Get Started</string>
-    <string name="prev">Previous</string>
+    <string name="next">Next</string>
     <string name="legoboard">Ceci est une app qui ne propose rien d\'autre que de contempler des images hautes en couleurs et de cliquer sur 2 boutons.\n Enjoy !</string>
     <string name="count"></string>
     <string name="channel_name">Notif compteur</string>
     <string name="channel_description">Nbr de cliques sur l\'image</string>
-    <string name="title_activity_navig">Navig</string>
+    <string name="title_activity_navig">Navigation</string>
+
     <string name="title_home">Home</string>
+    <string name="game">Game</string>
+    <string name="music">Music</string>
+    <string name="repare">BikeDiag</string>
+
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="appwidget_text">EXAMPLE</string>
-    <string name="add_widget">Add widget</string>
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
