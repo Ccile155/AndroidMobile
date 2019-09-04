@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark"
+    android:id="@+id/main"
     tools:context=".MainActivity">
 
     <ImageView
@@ -65,4 +66,58 @@
         app:layout_constraintStart_toEndOf="@id/welcome"
         app:layout_constraintTop_toTopOf="@+id/welcome" />
 
+
+    <Toolbar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/topbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/end"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/next"
+        android:src="@drawable/ic_message_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/middle"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/next"
+        android:src="@drawable/ic_filter_vintage_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/end"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/end"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/home_button"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/title_home"
+        android:src="@drawable/ic_home_white_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/middle"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/middle"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,10 +21,10 @@ public class Act3 extends AppCompatActivity {
     private ImageButton home;
     private ImageButton middle;
     private ImageButton end;
-    private int left = 1;
-    private int top = 1;
-    private int bottom = 1;
-    private int right = 1;
+    private int left = 500;
+    private int top = 500;
+    private int bottom = 500;
+    private int right = 500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,10 +67,8 @@ public class Act3 extends AppCompatActivity {
         ImageView image = new ImageView(this);
         ViewGroup.LayoutParams params = new ActionBar.LayoutParams(150,150);
         image.setLayoutParams(params);
-
-        //ViewGroup.MarginLayoutParams param = (ViewGroup.MarginLayoutParams)image.getLayoutParams();
-        //param.setMargins(left, top, right, bottom);
-        //image.setLayoutParams(param);
+        image.setX(161);
+        image.setY(370);
 
         image.setBackgroundResource(R.drawable.web_hi_res_512);
         image.setCropToPadding(true);

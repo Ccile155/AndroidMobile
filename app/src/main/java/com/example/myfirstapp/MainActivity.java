@@ -6,7 +6,6 @@ import android.graphics.ColorMatrixColorFilter;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +20,9 @@ public class MainActivity extends AppCompatActivity{
     private ImageButton getstart;
     private TextView count;
     static Integer cpt = 0;
+    private ImageButton home;
+    private ImageButton middle;
+    private ImageButton end;
 
     public void sound(View view){
         if(mp != null && mp.isPlaying()) {
@@ -67,6 +69,36 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 Intent otherActivity = new Intent(getApplicationContext(), LegoActivity.class);
+                startActivity(otherActivity);
+                finish();
+            }
+        });
+
+        this.home = findViewById(R.id.home_button);
+        home.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent otherActivity = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(otherActivity);
+                finish();
+            }
+        });
+
+        this.middle = findViewById(R.id.middle);
+        middle.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent otherActivity = new Intent(getApplicationContext(), LegoActivity.class);
+                startActivity(otherActivity);
+                finish();
+            }
+        });
+
+        this.end = findViewById(R.id.end);
+        end.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent otherActivity = new Intent(getApplicationContext(), Act3.class);
                 startActivity(otherActivity);
                 finish();
             }
