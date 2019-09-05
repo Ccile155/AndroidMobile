@@ -1,11 +1,13 @@
 package com.example.myfirstapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class LegoActivity extends AppCompatActivity {
 
@@ -48,4 +50,5 @@ public class LegoActivity extends AppCompatActivity {
             }
         });
     }
+
 }

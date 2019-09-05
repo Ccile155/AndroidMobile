@@ -3,7 +3,9 @@ package com.example.myfirstapp;
 import android.app.ActionBar;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
@@ -21,10 +23,6 @@ public class Act3 extends AppCompatActivity {
     private ImageButton home;
     private ImageButton middle;
     private ImageButton end;
-    private int left = 500;
-    private int top = 500;
-    private int bottom = 500;
-    private int right = 500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,13 +62,20 @@ public class Act3 extends AppCompatActivity {
             }
         });
 
-        ImageView image = new ImageView(this);
-        ViewGroup.LayoutParams params = new ActionBar.LayoutParams(150,150);
-        image.setLayoutParams(params);
-        image.setX(161);
-        image.setY(370);
+        int imgx = 150;
+        int imgy = 150;
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int width = size.x;
 
-        image.setBackgroundResource(R.drawable.web_hi_res_512);
+        ImageView image = new ImageView(this);
+        ViewGroup.LayoutParams params = new ActionBar.LayoutParams(imgx,imgy);
+        image.setLayoutParams(params);
+        image.setX(width/2-imgx/2);
+        image.setY(550);
+
+        image.setBackgroundResource(R.mipmap.ic_launcher4);
         image.setCropToPadding(true);
 
         mylayout.addView(image);
@@ -81,13 +86,13 @@ public class Act3 extends AppCompatActivity {
                 AlertDialog.Builder monPopup = new AlertDialog.Builder(myactivity);
                 monPopup.setTitle("Andros");
                 monPopup.setMessage("Le meilleur du fruit !");
-                //monPopup.setPositiveButtonIcon(R.drawable.ic_sentiment_very_satisfied_black_24dp, n
                 monPopup.setPositiveButton("oui", new DialogInterface.OnClickListener(){
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i){
                         Toast.makeText(Act3.this, "ok", Toast.LENGTH_SHORT).show();
                     }
                 });
+                //monPopup.setPositiveButtonIcon(R.drawable.ic_sentiment_very_satisfied_black_24dp);
 
                 monPopup.setNegativeButton("non", new  DialogInterface.OnClickListener(){
                     @Override
